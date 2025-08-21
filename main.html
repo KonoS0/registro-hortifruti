@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Perdas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Perdas</h1>
+
+        <div class="form-group">
+            <label for="produto">Produto:</label>
+            <input list="produtos-list" id="produto" name="produto">
+            <datalist id="produtos-list">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="medida">Medida:</label>
+            <select id="medida" name="medida">
+                <option value="kg">Quilo (kg)</option>
+                <option value="unidade">Unidade (un)</option>
+            </select>
+        </div>
+
+        <button id="adicionar-btn">Adicionar Perda</button>
+        <button id="ver-tabela-btn">Ver Tabela de Perdas</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
